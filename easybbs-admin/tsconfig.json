@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    /* 基本选项 */
+    "target": "ESNext" /* 指定 ECMAScript 目标版本*/,
+    "module": "ESNext" /* 指定模块代码生成*/,
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ES2015.Promise"
+    ] /* 指定要包含在编译中的库 */,
+    "sourceMap": true /* 生成相应的“.map”文件。 */,
+    "composite": true /* 启用项目编译 */,
+    "resolveJsonModule":true,
+    "removeComments": true /* 不要向输出发出注释（删除除代码注释）。 */,
+    "noEmit": true /* 不发出输出（不生成编译后的文件）。 */,
+    "noEmitOnError": true /* 在输出js代码时，如果有错将不编译文件。 */,
+    "downlevelIteration": true,
+    "isolatedModules": true /* 将每个文件转换为一个单独的模块*/,
+    /* 严格的类型检查选项 */
+    "strict": true /* 启用所有严格的类型检查选项。*/,
+    "strictFunctionTypes": true /* 启用函数类型的严格检查。 */,
+    /* 额外检查 */
+    "noUnusedParameters": true /* 报告未使用参数的错误。 */,
+    "noFallthroughCasesInSwitch": true /* 在 switch 语句中报告失败情况的错误。 */,
+    /* 模块分辨率选项 */
+    "moduleResolution": "Node" /* 指定模块解析策略：*/,
+    "allowSyntheticDefaultImports": true /* 允许从没有默认导出的模块中默认导入*/,
+    "esModuleInterop": true /* 通过为所有导入创建命名空间对象 */,
+    "allowUmdGlobalAccess": true /* 允许从模块访问 UMD 全局变量。 */,
+
+    /* 源映射选项 */
+    "sourceRoot": "" /* 指定调试器应该定位 TypeScript 文件而不是源位置的位置。 */,
+    "mapRoot": "" /* 指定调试器应该定位映射文件而不是生成位置的位置。 */,
+    /* 高级选项 */
+    "skipLibCheck": true /* 跳过声明文件的类型检查。 */,
+    "forceConsistentCasingInFileNames": true, /* 禁止对同一文件的大小写不一致的引用。 */  
+  },
+  "exclude": ["node_modules","dist"],
+  "include": ["src/**/*.vue","src/**/*.ts","vue.env.d.ts"],
+}
